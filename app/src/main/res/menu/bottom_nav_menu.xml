@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/iHome"
+        android:title="@string/nav_home"
+        android:icon="@mipmap/ic_launcher"
+        />
+
+    <item
+        android:id="@+id/iSearch"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/nav_setting"
+        />
+
+    <item
+        android:id="@+id/iBooking"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/nav_booking"
+
+        />
+
+    <item
+        android:id="@+id/iProfile"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/nav_profile"
+        />
+</menu>
