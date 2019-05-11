@@ -20,11 +20,17 @@ class FlightAdaptor extends RecyclerView.Adapter<FlightAdaptor.FligthViewHolder>
         this.flightList = flightList;
     }
 
+    public FlightAdaptor(List<flight> flightList) {
+        this.mCtx = mCtx;
+        this.flightList = flightList;
+
+    }
+
 
     @NonNull
     @Override
     public FligthViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        LayoutInflater inflater = LayoutInflater.from(mCtx);
+        LayoutInflater inflater = LayoutInflater.from(viewGroup.getContext());
         View view = inflater.inflate(R.layout.layout_booking_flight, null);
         return new FligthViewHolder(view);
     }
@@ -37,8 +43,8 @@ class FlightAdaptor extends RecyclerView.Adapter<FlightAdaptor.FligthViewHolder>
         fligthViewHolder.textViewSource.setText(flight.getSource1());
         fligthViewHolder.textViewDate.setText(String.valueOf(flight.getDate()));
         fligthViewHolder.textViewFlightNo.setText(String.valueOf(flight.getFlightNo()));
-        fligthViewHolder.textViewChildCount.setText(String.valueOf(flight.getNoOfChildten()));
-        fligthViewHolder.textViewChildCount.setText(String.valueOf(flight.getNoOfAdults()));
+        fligthViewHolder.textViewChildCount.setText(String.valueOf(flight.getNoOfChildren()));
+        fligthViewHolder.textViewAdultCount.setText(String.valueOf(flight.getNoOfAdults()));
     }
 
     @Override

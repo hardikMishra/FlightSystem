@@ -3,25 +3,21 @@
     <item
         android:id="@+id/iHome"
         android:title="@string/nav_home"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_home_black_24dp"
         />
 
-    <item
-        android:id="@+id/iSearch"
-        android:icon="@mipmap/ic_launcher"
-        android:title="@string/nav_setting"
-        />
+
 
     <item
         android:id="@+id/iBooking"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_airplanemode_active_black_24dp"
         android:title="@string/nav_booking"
 
         />
 
     <item
         android:id="@+id/iProfile"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_person_black_24dp"
         android:title="@string/nav_profile"
         />
 </menu>

@@ -11,7 +11,7 @@ public class flight {
     String source1;
     String destination;
     int noOfAdults = 0;
-    int noOfChildten = 0;
+    int noOfChildren = 0;
 
     public flight(int flightNo, Date date, Time time, String source, String destination, int countAdult, int countChild){
         this.date = date;
@@ -20,7 +20,7 @@ public class flight {
         this.source1 = source;
         this.destination = destination;
         noOfAdults = countAdult;
-        noOfChildten = countChild;
+        noOfChildren = countChild;
 
     }
 
@@ -36,8 +36,8 @@ public class flight {
         return noOfAdults;
     }
 
-    public int getNoOfChildten() {
-        return noOfChildten;
+    public int getNoOfChildren() {
+        return noOfChildren;
     }
 
     public String getDestination() {
@@ -68,8 +68,8 @@ public class flight {
         this.noOfAdults = noOfAdults;
     }
 
-    public void setNoOfChildten(int noOfChildten) {
-        this.noOfChildten = noOfChildten;
+    public void setNoOfChildren(int noOfChildren) {
+        this.noOfChildren = noOfChildren;
     }
 
     public void setTime(Time time) {
